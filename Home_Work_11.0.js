@@ -5,11 +5,22 @@
 
 class Plant {
   constructor(height, age) {
-      this.height = height;
-      this.age = age;
+      this._height = height;
+      this._age = age;
+  }
+  get height() {
+    return this._height;
+  }
+  set height(value) {
+    this._height = value;
+  }
+  get age() {
+    return this._age;
+  }
+  set age(value) {
+    this._age = value;
   }
   grow() {
-      // this.height = this.height + 10;
       this.height += 10
   }
 }
