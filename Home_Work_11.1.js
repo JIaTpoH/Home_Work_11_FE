@@ -6,9 +6,9 @@
 //присвоив ему новое значение "delicious"
 
 const garden = {
-key1: 'orange',
-key2: 'apple',
-key3: 'pear'
+key1: 'Orange',
+key2: 'Apple',
+key3: 'Pear'
 };
 
 const newGarden = {};
@@ -19,3 +19,12 @@ for (let key in garden) {
 }
 
 console.log(newGarden);
+
+for (let key in garden) {
+  if (key === 'apple') {
+    console.log(garden ['pear']);
+    garden['pear'] = 'delicious'
+  }
+}
+
+console.log(garden);
