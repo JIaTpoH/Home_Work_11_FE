@@ -38,3 +38,9 @@ redRose.grow();
 console.log(redRose.height);
 redRose.grow();
 console.log(redRose.height);
+
+redRose.height = 200;
+console.log(redRose.height);
+
+redRose.age = 5;
+console.log(redRose.age);
